@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+/* CABEÇALHO */
+
+h1{
+    display: flex;
+    margin: 20px;
+}
+.content-bar{
+    display: flex;
+    align-items: center;
+  
+}
+#nav-bar{
+    display: flex;
+    font-size: 10px;
+    column-gap: 5px;
+    margin: 0;
+ 
+}
+button{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid;
+    cursor: pointer;
+}
+#btn-ativar{
+    background-color: white;
+        color: black;
+}
+
+.ativar{
+ 
+        background-color: black;
+        color: white;
+        transition: all 0.25s ease-in-out;
+
+        #btn-ativar{
+            background-color: black;
+        color: white;
+        }
+
+        #rodape{
+            background-color: white;
+            color: black;
+            
+        }
+}
+.desativar{
+ 
+        background-color: white;
+        color: black;
+        transition: all 0.25s ease-in-out;
+
+        #btn-ativar{
+            background-color: white;
+        color: black;
+        }
+
+        #rodape{
+            background-color: black;
+            color: white;
+            
+        }
+}
+
+/* CORPO */
+
+main{
+    margin: 20px;
+}
+.img-nome{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+h2 {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-size: 30px;
+}
+.img-1 {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.descricao {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+
+}
+
+/* IMAGENS */   
+img{
+    width: 200px;
+    height: 200px;
+    border: 1px solid;
+   column-gap: 50px;
+
+}
+
+
+
+
+/* RODAPÉ */
+
+#rodape{
+    background-color: black;
+    color: white;
+    width: 100vw;
+    height: 40vh;
+}
+.p-rodape{
+ padding: 100px; 
+}
+
+
+
+/* RESPONSIVE */
+@media screen and (max-width: 925px) {
+    body{
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+    .nome-btn{
+        font-size: 10px;
+    }
+    h1{
+        display: flex;
+        margin: 20px;
+        font-size: 15px;
+    } 
+    #nav-bar{
+        display: block;
+    } 
+    .content-bar{
+    
+       
+     
+        display: flex;
+    }
+
+    .img-nome{
+        display: block;
+    }
+    h2{
+        font-size: 20px;
+    }
+main{
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+}  
+}
+
